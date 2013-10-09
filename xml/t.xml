@@ -1,0 +1,11 @@
+<?xml version="1.0"?>  
+<contacts id="bluecrystal">  
+<item name="keen" fff="ddd">  
+    <telephone type="phone">222222222</telephone>  
+    <telephone type="mobile">134567890</telephone>  
+</item>  
+<item name="bcm">  
+    <telephone type="phone">11111111</telephone>  
+    <telephone type="mobile">15909878909</telephone>  
+</item>  
+</contacts>
