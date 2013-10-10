@@ -7,7 +7,7 @@ LEVELS = {'NOSET': logging.NOTSET,
           'DEBUG': logging.DEBUG,
           'INFO': logging.INFO,
           'WARNING': logging.WARNING,
-          'ERROR': logging.ERROR,
+          'ERROR': logging.ERROR, 
           'CRITICAL': logging.CRITICAL}
 
 # create logs file folder
