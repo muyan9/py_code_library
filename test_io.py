@@ -1,5 +1,3 @@
-# coding: gbk
-
 import os, time, sys, random
 import requests
 
