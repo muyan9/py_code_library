@@ -3,7 +3,7 @@ import requests
 
 s_pre = sys.argv[1]
 
-f_log = open('%s.log' %s, 'a')
+f_log = open('%s.log' % s_pre, 'a')
 
 t_data_4k = ''
 for i in range(1024 * 4):
