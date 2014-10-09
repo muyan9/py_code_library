@@ -35,6 +35,7 @@ def sha1(str):
 
 def sha1_file(filename):
     hash_new = hashlib.sha1() #或hashlib.md5()
+    #FIXME: 整理并封装成安装包
     with open(filename,'rb') as fp: #打开文件，一定要以二进制打开
         while True:
             data = fp.read(4096*256) #读取文件块
@@ -46,11 +47,11 @@ def sha1_file(filename):
 
 
 if __name__ == "__main__":
-    path = u"D:\\迅雷下载\\apache-tomcat-7.0.52.zip"
+    path = u"D:\\迅雷下载\\CentOS-7.0-1406-x86_64-livecd.iso"
     
-    print len(open(path, 'rb').read())
-    print md5(open(path, 'rb').read())
+#     print len(open(path, 'rb').read())
+#     print md5(open(path, 'rb').read())
     print md5_file(path)
-    print crc32(open(path, 'rb').read())
-    print sha1(open(path, 'rb').read())
-    print sha1_file(path)
+#     print crc32(open(path, 'rb').read())
+#     print sha1(open(path, 'rb').read())
+#     print sha1_file(path)
