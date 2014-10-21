@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
 encoding//system/subprocess/test_subprocess.py=utf-8
+encoding//third/test_gevent.py=utf8
 encoding/hash.py=utf8
