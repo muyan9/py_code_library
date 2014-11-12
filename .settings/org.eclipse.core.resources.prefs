@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//regex/match.py=cp936
 encoding//system/subprocess/test_subprocess.py=utf-8
 encoding//third/test_gevent.py=utf8
 encoding/hash.py=utf8
+encoding/loggingconfig.py=utf-8
