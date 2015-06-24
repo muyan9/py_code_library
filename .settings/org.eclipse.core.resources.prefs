@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
+encoding//datetime/date.py=utf8
+encoding//network/broadcast/server.py=utf8
 encoding//regex/match.py=cp936
+encoding//ssh-paramiko/ssh.py=utf8
 encoding//system/subprocess/test_subprocess.py=utf-8
 encoding//third/test_gevent.py=utf8
 encoding/hash.py=utf8

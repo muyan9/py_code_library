@@ -17,8 +17,9 @@
 '''
 
 import datetime
-import time #@UnresolvedImport
+import time
 
+#TODO: 多种时间对象判断
 def datetime2str(datetime_obj = None, str_format = '%Y-%m-%d %H:%M:%S'):
     '''
     按指定格式获取日期时间
