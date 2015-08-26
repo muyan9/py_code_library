@@ -9,13 +9,6 @@
 开发时间：2010-9-1 16:38:00
 '''
 
-'''
-修改后版本：
-修改人：
-修改时间：
-解决的主要问题说明：
-'''
-
 import datetime
 import time
 
@@ -29,14 +22,12 @@ def datetime2str(datetime_obj = None, str_format = '%Y-%m-%d %H:%M:%S'):
     返回值：string    时间字符串
     '''
     if datetime_obj != None:
-        print 'dd',datetime_obj
         return datetime_obj.strftime(str_format)
     else:
         return datetime.datetime.now().strftime(str_format)
     
-def str2datetime(str_time, str_format):
-    t = time.mktime(time.strptime( str_time, str_format))
-    return datetime.datetime.fromtimestamp(t)
+def str2datetime(str_time, str_format = '%Y-%m-%d %H:%M:%S'):
+    return datetime.datetime.strptime(str_time, str_format)
     
     
 if __name__ == '__main__' :
@@ -52,7 +43,7 @@ if __name__ == '__main__' :
     
     t1 = str2datetime(d1, "%Y-%m-%d %H:%M:%S")
     t2 = str2datetime(d2, "%Y-%m-%d %H:%M:%S")
-    t = datetime.timedelta()
+#     t = datetime.timedelta()
     t = t2-t1
     print 'd1 与 d2 间隔秒数 ' , t.seconds
     print '将 d1 转换为日期型 ' , type(str2datetime(d1, "%Y-%m-%d %H:%M:%S"))
