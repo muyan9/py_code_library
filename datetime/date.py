@@ -12,6 +12,11 @@
 import datetime
 import time
 
+def timestamp2datetime(t=None):
+    if not t:
+        t = time.time()
+    return datetime.datetime.fromtimestamp(t)
+
 #TODO: 多种时间对象判断
 def datetime2str(datetime_obj = None, str_format = '%Y-%m-%d %H:%M:%S'):
     '''
