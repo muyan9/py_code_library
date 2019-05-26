@@ -2,6 +2,17 @@
 
 import hashlib, os
 import binascii
+import base64
+base64._b85alphabet = b'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~'
+def base85encode(str, coding = 'utf8'):
+    if type(str)==type('ss'):
+        a = str.encode(coding)
+    return base64.b85encode(a).decode(coding)
+
+def base85decode(str, coding = 'utf8'):
+    if type(str)==type('ss'):
+        a = str.encode(coding)
+    return base64.b85decode(a).decode(coding)
 
 def md5(str):
     return hashlib.md5(str).hexdigest().upper()
@@ -65,7 +76,13 @@ if __name__ == "__main__":
     
 #     print len(open(path, 'rb').read())
 #     print md5(open(path, 'rb').read())
-    print md5_file(path)
+#     print(md5_file(path))
 #     print crc32(open(path, 'rb').read())
 #     print sha1(open(path, 'rb').read())
 #     print sha1_file(path)
+
+    a = base85encode('abcdefghijklmnopqrstuvwxyz')
+    #                 abcdefghijkkmnopqrstuvwxyz
+    print(a)
+    b = base85decode(a)
+    print(b)
